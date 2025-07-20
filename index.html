@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Neo Bypass</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Key System Bypass</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="app">
-        <h1>Neo Key System Bypass</h1>
-        <div id="key-section">
-            <button id="get-key">Get API Key (via Linkvertise)</button>
-        </div>
-        <div id="bypass-section" style="display:none;">
-            <input type="text" id="link" placeholder="Paste Arcues/Linkvertise URL here" />
-            <button id="bypass-btn">Bypass</button>
-            <p id="result"></p>
-        </div>
+  <div class="container">
+    <h1>Neo Bypass System</h1>
+    <div id="key-section" class="card">
+      <p>Access the bypass by getting a valid API key first:</p>
+      <button id="get-key" class="btn glow">Get API Key</button>
     </div>
-    <script src="ads.js"></script>
-    <script src="main.js"></script>
+
+    <div id="bypass-section" class="card hidden">
+      <input id="link" class="input" placeholder="Paste Arcues/Linkvertise URL here..." />
+      <button id="bypass-btn" class="btn neon">Bypass</button>
+      <p id="result" class="result"></p>
+    </div>
+  </div>
+
+  <script src="ads.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
